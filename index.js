@@ -4,14 +4,14 @@ const app = express();
 const axios = require("axios");
 
 require("dotenv").config();
-const PORT = process.env.PORT;
+const PORT = 8080;
 
 app.use("/api/v1/jokes", async (req, res) => {
 
     try {
         const response = await axios.get("http://api.api-ninjas.com/v1/dadjokes", {
             headers: {
-                "X-Api-Key": process.env.API_KEY,
+                "X-Api-Key": "+fTwkKEBWuTo3kaeI0qF+Q==uUJ3GIm2qotopcPF",
             },
         });
 
